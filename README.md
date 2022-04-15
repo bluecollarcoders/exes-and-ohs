@@ -33,13 +33,13 @@ let countX = '';
 ```
 ## Solution 2
 ```javascript
-function XO(str) {
-  var sum = 0;
-  for(var i=0; i<str.length; i++){
-    if(str[i].toLowerCase() == 'x') sum++;
-    if(str[i].toLowerCase() == 'o') sum--;
-  }
-  return sum == 0;
+const XO = (str) => {
+var count = 0;
+for (let char of str) {
+  if(char.toLowerCase() == 'x') count++;
+  if(char.toLowerCase() == 'o') count--;
 }
+  return count == 0;
+};
 ```
 
